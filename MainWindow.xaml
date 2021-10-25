@@ -1,0 +1,41 @@
+﻿<Window x:Class="_1laba.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1laba"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.25*" />
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <TextBlock TextAlignment="Center">Время,TIME</TextBlock>
+            <TextBox x:Name="t_Param" Text="5"/>
+            <TextBlock TextAlignment="Center" TextWrapping="Wrap">Вероятность рождаемости жертв, ALPHA</TextBlock>
+            <TextBox x:Name="a_Param" Text="1,3"/>
+            <TextBlock TextAlignment="Center" TextWrapping="Wrap">Вероятность смертности жертв при встрече с хищником, BETA</TextBlock>
+            <TextBox x:Name="b_Param" Text="1,5"/>
+            <TextBlock TextAlignment="Center" TextWrapping="Wrap">Вероятность убыли хищников при нехватке еды, GAMMA</TextBlock>
+            <TextBox x:Name="c_Param" Text="2"/>
+            <TextBlock TextAlignment="Center" TextWrapping="Wrap">Вероятность достаточности еды для размножения хищников, DELTA</TextBlock>
+            <TextBox x:Name="d_Param" Text="1,1"/>
+            <Image Source="/photo.PNG" Height="99"></Image>
+            <Button x:Name="Calculated" Click="Calculated_Click">Построить график</Button>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <StackPanel Orientation="Horizontal" Height="100">
+                <TextBlock VerticalAlignment="Center" TextAlignment="Center">Хищники, PREDATOR</TextBlock>
+                <TextBox x:Name="V_Param" MinWidth="100" Text="2"/>
+                <TextBlock VerticalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap">Жертва, PREY</TextBlock>
+                <TextBox x:Name="P_Param" MinWidth="100" Text="8"/>
+                <Image Source="/Uslovie.png" Width="335"/>
+            </StackPanel>
+            <Grid>
+                
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
