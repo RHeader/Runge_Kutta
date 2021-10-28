@@ -1,17 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using LiveCharts.Wpf;
+using LiveCharts;
 
 namespace _1laba
 {
@@ -26,7 +16,7 @@ namespace _1laba
         }
         //https://github.com/nismakoto/Lotka-Volterra/blob/master/lotka_volterra.cc
         //Runge Kutta 
-        void runge_kutta( ref double  x, ref double y, double h)
+        void runge_kutta(ref double x, ref double y, double h)
         {
             double dx1, dx2, dx3, dx4, dy1, dy2, dy3, dy4;
 
@@ -50,19 +40,19 @@ namespace _1laba
             return Alpha * x - Beta * x * y;
         }
         //Predator fy хищник
-        private double PredatorFunc(double x,double y)
+        private double PredatorFunc(double x, double y)
         {
             return -Gamma * y + Delta * x * y;
         }
         double Alpha, Beta, Gamma, Delta;
-        List<Data> data;
+        internal List<Data> data;
         private void Calculated_Click(object sender, RoutedEventArgs e)
         {
             data = new List<Data>();
             double prey, predator, time;
             double h = 0.01;//шаг
             //Берем данные из формы .
-            if (!double.TryParse(t_Param.Text, out time))time = 0; //Время
+            if (!double.TryParse(t_Param.Text, out time)) time = 0; //Время
             if (!double.TryParse(V_Param.Text, out predator)) predator = 0; // Хищники 
             if (!double.TryParse(P_Param.Text, out prey)) prey = 0; //Жертвы
             if (!double.TryParse(a_Param.Text, out Alpha)) Alpha = 0;
@@ -70,14 +60,17 @@ namespace _1laba
             if (!double.TryParse(c_Param.Text, out Gamma)) Gamma = 0;
             if (!double.TryParse(d_Param.Text, out Delta)) Delta = 0;
 
-            for (double i = 0; i < time; i+=h)
+            for (double i = 0; i < time; i += h)
             {
                 runge_kutta(ref prey, ref predator, h);
                 data.Add(new Data { step = h, Predator = predator, Prey = prey });
             }
+            Graphics.Datas = data;
         }
+        
     }
-    class Data
+    
+    public class Data
     {
         public double step { get; set; }
         public double Prey { get; set; }

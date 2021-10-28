@@ -17,3 +17,27 @@ C:\Users\worge\Desktop\Магистратура\мат и моделирован
 C:\Users\worge\Desktop\Магистратура\мат и моделирование\1laba\obj\Debug\netcoreapp3.1\1laba.dll
 C:\Users\worge\Desktop\Магистратура\мат и моделирование\1laba\obj\Debug\netcoreapp3.1\1laba.pdb
 C:\Users\worge\Desktop\Магистратура\мат и моделирование\1laba\obj\Debug\netcoreapp3.1\1laba.genruntimeconfig.cache
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\1laba_MarkupCompile.cache
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\1laba_MarkupCompile.lref
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\1laba.dll
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\1laba.pdb
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\bin\Debug\netcoreapp3.1\1laba.exe
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\bin\Debug\netcoreapp3.1\1laba.deps.json
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\bin\Debug\netcoreapp3.1\1laba.runtimeconfig.json
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\bin\Debug\netcoreapp3.1\1laba.runtimeconfig.dev.json
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\bin\Debug\netcoreapp3.1\1laba.dll
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\bin\Debug\netcoreapp3.1\1laba.pdb
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\bin\Debug\netcoreapp3.1\LiveCharts.dll
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\bin\Debug\netcoreapp3.1\LiveCharts.Wpf.dll
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\GraphicControl.g.cs
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\GraphicControl.baml
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\1laba.g.resources
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\1laba.AssemblyInfoInputs.cache
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\1laba.AssemblyInfo.cs
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\1laba.csproj.CoreCompileInputs.cache
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\1laba.csproj.CopyComplete
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\1laba.genruntimeconfig.cache

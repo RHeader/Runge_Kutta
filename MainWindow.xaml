@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_1laba"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -25,17 +26,21 @@
             <Image Source="/photo.PNG" Height="99"></Image>
             <Button x:Name="Calculated" Click="Calculated_Click">Построить график</Button>
         </StackPanel>
-        <StackPanel Grid.Column="1">
-            <StackPanel Orientation="Horizontal" Height="100">
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.Row="0">
                 <TextBlock VerticalAlignment="Center" TextAlignment="Center">Хищники, PREDATOR</TextBlock>
                 <TextBox x:Name="V_Param" MinWidth="100" Text="2"/>
                 <TextBlock VerticalAlignment="Center" TextAlignment="Center" TextWrapping="Wrap">Жертва, PREY</TextBlock>
                 <TextBox x:Name="P_Param" MinWidth="100" Text="8"/>
                 <Image Source="/Uslovie.png" Width="335"/>
             </StackPanel>
-            <Grid>
-                
+            <Grid Grid.Row="1" >
+                <local:GraphicControl x:Name="Graphics"/>
             </Grid>
-        </StackPanel>
-    </Grid>
+            </Grid>
+        </Grid>
 </Window>
