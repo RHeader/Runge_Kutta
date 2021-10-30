@@ -48,7 +48,7 @@ namespace _1laba
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            GraphicWindow window = new GraphicWindow();
+            GraphicWindow window = new GraphicWindow(data);
             window.Show();
         }
 
