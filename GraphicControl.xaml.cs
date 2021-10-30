@@ -28,20 +28,27 @@ namespace _1laba
             {
                 new LineSeries
                 {
-                    Title = "Series 1",
-                    Values = new ChartValues<double> { 4, 6, 5, 2 ,4 }
+                    Title = "Series 3",
+                    Values = new ChartValues<double> { 4,2,7,2,7 },
+                    PointGeometry = DefaultGeometries.Circle,
+                    PointGeometrySize = 15
                 },
-                new LineSeries
-                {
-                    Title = "Series 2",
-                    Values = new ChartValues<double> { 6, 7, 3, 4 ,6 },
-                    PointGeometry = null
-                },
+
+
                 new LineSeries
                 {
                     Title = "Series 3",
                     Values = new ChartValues<double> { 4,2,7,2,7 },
-                    PointGeometry = DefaultGeometries.Square,
+                    PointGeometry = DefaultGeometries.Circle,
+                    PointGeometrySize = 15
+                },
+
+
+                new LineSeries
+                {
+                    Title = "Series 3",
+                    Values = new ChartValues<double> { 4,2,7,2,7 },
+                    PointGeometry = DefaultGeometries.Circle,
                     PointGeometrySize = 15
                 }
             };
@@ -55,7 +62,7 @@ namespace _1laba
                 Title = "Series 4",
                 Values = new ChartValues<double> { 5, 3, 2, 4 },
                 LineSmoothness = 0, //0: straight lines, 1: really smooth lines
-                PointGeometrySize = 50,
+                PointGeometrySize = 1,
                 PointForeground = Brushes.Gray
             });
 

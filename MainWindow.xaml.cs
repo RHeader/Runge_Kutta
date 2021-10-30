@@ -2,6 +2,8 @@
 using System.Windows;
 using LiveCharts.Wpf;
 using LiveCharts;
+using System;
+using _1laba.Windows;
 
 namespace _1laba
 {
@@ -32,8 +34,6 @@ namespace _1laba
             x += h * (dx1 + 2.0 * dx2 + 2.0 * dx3 + dx4) / 6.0;
             y += h * (dy1 + 2.0 * dy2 + 2.0 * dy3 + dy4) / 6.0;
         }
-
-
         //Prey fx Добыча
         private double PreyFunc(double x, double y)
         {
@@ -45,6 +45,23 @@ namespace _1laba
             return -Gamma * y + Delta * x * y;
         }
         double Alpha, Beta, Gamma, Delta;
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            GraphicWindow window = new GraphicWindow();
+            window.Show();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         internal List<Data> data;
         private void Calculated_Click(object sender, RoutedEventArgs e)
         {
@@ -63,13 +80,11 @@ namespace _1laba
             for (double i = 0; i < time; i += h)
             {
                 runge_kutta(ref prey, ref predator, h);
-                data.Add(new Data { step = h, Predator = predator, Prey = prey });
+                data.Add(new Data { step = Math.Round(i,2), Predator = predator, Prey = prey });
             }
-            Graphics.Datas = data;
+            this.DataContext = data;
         }
-        
     }
-    
     public class Data
     {
         public double step { get; set; }

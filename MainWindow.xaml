@@ -24,11 +24,12 @@
             <TextBlock TextAlignment="Center" TextWrapping="Wrap">Вероятность достаточности еды для размножения хищников, DELTA</TextBlock>
             <TextBox x:Name="d_Param" Text="1,1"/>
             <Image Source="/photo.PNG" Height="99"></Image>
-            <Button x:Name="Calculated" Click="Calculated_Click">Построить график</Button>
+            <Button x:Name="Calculated" Click="Calculated_Click">Получить данные</Button>
         </StackPanel>
         <Grid Grid.Column="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="0.1*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <StackPanel Orientation="Horizontal" Grid.Row="0">
@@ -38,9 +39,22 @@
                 <TextBox x:Name="P_Param" MinWidth="100" Text="8"/>
                 <Image Source="/Uslovie.png" Width="335"/>
             </StackPanel>
-            <Grid Grid.Row="1" >
-                <local:GraphicControl x:Name="Graphics"/>
-            </Grid>
-            </Grid>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="1">
+                <Button MinWidth="100" Content="График Prey" Click="Button_Click" />
+                <Button MinWidth="100" Content="График Predator" Click="Button_Click_1"/>
+                <Button MinWidth="100" Content="Фазовая диграмма Prey и Predator" Click="Button_Click_2"/>
+            </StackPanel>
+            <ListView ItemsSource="{Binding}" Grid.Row="2">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=step}" Width="100">Время</GridViewColumn>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=Prey}" Width="200">Добыча</GridViewColumn>
+                        <GridViewColumn DisplayMemberBinding="{Binding Path=Predator}" Width="200">Хищники</GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            
         </Grid>
+     </Grid>
 </Window>
