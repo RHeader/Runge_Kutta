@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <None Remove="photo.PNG" />
-    <None Remove="Uslovie.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -18,9 +17,6 @@
 
   <ItemGroup>
     <Resource Include="photo.PNG">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Uslovie.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

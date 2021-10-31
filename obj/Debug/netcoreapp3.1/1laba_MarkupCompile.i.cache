@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1;
 C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\App.xaml
-2-375567260
+3184388546
 
-61029410060
+71844535652
 194-2013735482
-MainWindow.xaml;Windows\GraphicWindow.xaml;
+MainWindow.xaml;Windows\GraphicWindow.xaml;Windows\PhaseWindow.xaml;
 
-True
+False
 

@@ -54,28 +54,31 @@ namespace _1laba
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            PhaseWindow window = new PhaseWindow(data);
+           window.Show();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
 
         internal List<Data> data;
         private void Calculated_Click(object sender, RoutedEventArgs e)
         {
             data = new List<Data>();
             double prey, predator, time;
-            double h = 0.01;//шаг
+            double h = 0.1;//шаг
+            bool isValid = true;
             //Берем данные из формы .
             if (!double.TryParse(t_Param.Text, out time)) time = 0; //Время
             if (!double.TryParse(V_Param.Text, out predator)) predator = 0; // Хищники 
             if (!double.TryParse(P_Param.Text, out prey)) prey = 0; //Жертвы
-            if (!double.TryParse(a_Param.Text, out Alpha)) Alpha = 0;
+            if (!double.TryParse(a_Param.Text, out Alpha))  Alpha = 0; 
             if (!double.TryParse(b_Param.Text, out Beta)) Beta = 0;
             if (!double.TryParse(c_Param.Text, out Gamma)) Gamma = 0;
             if (!double.TryParse(d_Param.Text, out Delta)) Delta = 0;
+
+            if (!isValid)
+            {
+                MessageBox.Show("Not Valid Parameters out of range 0 to 1");
+            }
 
             for (double i = 0; i < time; i += h)
             {

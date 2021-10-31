@@ -16,13 +16,13 @@
             <TextBlock TextAlignment="Center">Время,TIME</TextBlock>
             <TextBox x:Name="t_Param" Text="5"/>
             <TextBlock TextAlignment="Center" TextWrapping="Wrap">Вероятность рождаемости жертв, ALPHA</TextBlock>
-            <TextBox x:Name="a_Param" Text="1,3"/>
+            <TextBox x:Name="a_Param" Text="0,7"/>
             <TextBlock TextAlignment="Center" TextWrapping="Wrap">Вероятность смертности жертв при встрече с хищником, BETA</TextBlock>
-            <TextBox x:Name="b_Param" Text="1,5"/>
+            <TextBox x:Name="b_Param" Text="0,5"/>
             <TextBlock TextAlignment="Center" TextWrapping="Wrap">Вероятность убыли хищников при нехватке еды, GAMMA</TextBlock>
-            <TextBox x:Name="c_Param" Text="2"/>
+            <TextBox x:Name="c_Param" Text="0,7"/>
             <TextBlock TextAlignment="Center" TextWrapping="Wrap">Вероятность достаточности еды для размножения хищников, DELTA</TextBlock>
-            <TextBox x:Name="d_Param" Text="1,1"/>
+            <TextBox x:Name="d_Param" Text="0,3"/>
             <Image Source="/photo.PNG" Height="99"></Image>
             <Button x:Name="Calculated" Click="Calculated_Click">Получить данные</Button>
         </StackPanel>
@@ -41,9 +41,8 @@
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Grid.Row="1">
-                <Button MinWidth="100" Content="График Prey" Click="Button_Click" />
-                <Button MinWidth="100" Content="График Predator" Click="Button_Click_1"/>
-                <Button MinWidth="100" Content="Фазовая диграмма Prey и Predator" Click="Button_Click_2"/>
+                <Button MinWidth="100" Content="График Добычи и Хищников" Click="Button_Click_1"/>
+                <Button MinWidth="100" Content="Фазовая диграмма Хищников и добычи" Click="Button_Click_2"/>
             </StackPanel>
             <ListView ItemsSource="{Binding}" Grid.Row="2">
                 <ListView.View>

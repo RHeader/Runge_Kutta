@@ -40,3 +40,6 @@ C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.
 C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\1laba.genruntimeconfig.cache
 C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\Windows\GraphicWindow.g.cs
 C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\Windows\GraphicWindow.baml
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\1laba.csprojAssemblyReference.cache
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\Windows\PhaseWindow.g.cs
+C:\Users\aeae0\Desktop\Мага 1сем\1laba\Runge_Kutta\obj\Debug\netcoreapp3.1\Windows\PhaseWindow.baml
